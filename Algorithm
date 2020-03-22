@@ -1,0 +1,36 @@
+This function is the heart of the program. Any competative coding platform will only look for the above function from us. Reamaining part of the code need not be bothered as it will be given by them only.
+Basically they are testing us if we are able to solve the problem.
+
+   static int[] matchingStrings(String[] strings, String[] queries) {
+        int temp=0,count=0;
+        int res[] = new int[queries.length];
+        for(int i=0;i<queries.length;i++){
+            for(int j=0;j<strings.length;j++)
+            {
+                if(strings[j].equals(queries[i]))
+                    temp++;
+            }
+            res[i]=temp;
+            temp=0;
+        }
+        return res;
+    }
+
+
+Explaination of the function:
+  Please note that "queries" is an array of query strings whose frequency must be found in "strings".
+ 
+ check the for loop:
+    For each "query" string we have to find the match in "string".
+    if there is a match then increment temp variable by 1.
+    continue this process for all strings present in queries.
+    
+    
+  
+ 
+  
+  
+
+
+
+
